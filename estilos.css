@@ -1,0 +1,47 @@
+/* pudiera poner solo .card, pero es buena práctica ser más específico */
+section .card-container .card {
+    border: 1px dashed #333;
+    background: #fff;
+    text-align: center;
+    width: 250px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.card .imagen-superheroe {
+    width: 250px;
+    height: 250px;
+}
+
+.card .imagen-superheroe img {
+    width: 100%; /* se puede poner auto = 100%*/
+    height: 100%;    
+}
+
+.card h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 0px;
+}
+
+.card .precio-anterior {
+    text-decoration: line-through;
+    color: red;
+}
+
+.card .add-button {
+    background: #0000FF;
+    border-radius: 15px;
+    padding: 10px 0px;
+    margin: 10px 10px;
+}
+
+.card .add-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.card .add-button:hover {
+    background: #FF0000;
+    cursor: pointer;
+}
+    
