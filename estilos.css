@@ -1,10 +1,21 @@
 /* pudiera poner solo .card, pero es buena práctica ser más específico */
+*{box-sizing: border-box;}
+
 section .card-container .card {
     border: 1px dashed #333;
     background: #fff;
     text-align: center;
     width: 250px;
     border-radius: 0px 0px 15px 15px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background: #f0f0f0;
 }
 
 .card .imagen-superheroe {
@@ -44,4 +55,70 @@ section .card-container .card {
     background: #FF0000;
     cursor: pointer;
 }
+
+/*LOGO*/
+#logo img{
+    width: 70px;
+    height: 70px;
+}
     
+#logo {
+    display: flex;
+}
+
+#logo h1 {
+    font-size: 1.5rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*AVATAR*/
+#login .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ffff00;
+    background-image: url("imagenes/batman.jpg");
+    background-size: cover;
+}
+
+/*BARRA DE NAVEGACION*/
+nav{
+    background: #0000FF;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #0000FF;
+}
+
+nav ul li {
+    padding: 10px 10px;
+}
+
+nav ul li:hover {
+    background: #FFFF00;
+}
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
